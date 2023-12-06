@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+p {
+    color: #555;
+    font-size: 13pt;
+}
+
  /*  About Me Section    */
 
 
@@ -30,6 +35,7 @@
 .right_column {
     width: 55%;
     box-sizing: border-box;
+    padding-top: 80px;
 }
 
 .right_column h2 {
@@ -38,15 +44,17 @@
     margin-bottom: 30px;
 }
 
-.right_column p {
+.right_column #About_Paragraph {
     color: #ffffff;
-    font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.3;
+ 
+    
 }
 
 .hobbies_box {
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 10px;
+
 }
 
 .hobbies_box h3 {
@@ -57,12 +65,12 @@
 
 .hobbies_row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .hobby_icon {
-    width: calc(20% - 10px); /* Adjust width based on your spacing preference */
+    width: calc(20% - 10px);
     margin-bottom: 10px;
 }
 
@@ -82,38 +90,60 @@
 
 /*  My Services Section  */
 
-.My_services {
-    text-align: center;
+.My_Service_Frame {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
     padding: 50px;
 }
 
-.My_services h1 {
+#My_Services h1 {
     color: #333;
     font-size: 36px;
-    padding-bottom: 40px;
+    text-align: center;
 }
 
-.services_box {
-    display: inline-block;
-    width: 30%;
+.Service_Card, .Service_Card1, .Service_Card2, .Service_Card3 {
+    width: 100%;
     box-sizing: border-box;
-    border: 1px solid #333;
-    margin: 10px;
+    border: 3px solid #333;
+    border-radius: 20px;
     padding: 20px;
+    text-align: center;
 }
 
 .box-header {
-    font-size: 18pt;
+    font-size: 18px;
 }
 
-.placeholder-image {
-    display: block;
+.image-placeholder, .Idation_img, .Design_system_img, .Interaction_Design_img {
+    width: 150px; /* Set the width of your image placeholder */
+    height: 150px; /* Set the height of your image placeholder */
+    background-color: deeppink;
     margin: 20px auto;
-    max-width: 100%;
-    height: auto;
+}
+.Idation_img {
+    background-image: url(Images/ideation_still.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
 }
 
-p {
-    color: #555;
-    font-size: 14pt;
+.Design_system_img{
+    background-image: url(Images/Design_Systems_still.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.Interaction_Design_img {
+    background-image: url(Images/interaction_Design_still.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+
 }
