@@ -41,7 +41,7 @@ p {
 .right_column h2 {
     color: #ffffff;
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .right_column #About_Paragraph {
@@ -67,22 +67,46 @@ p {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 
 .hobby_icon {
     width: calc(20% - 10px);
     margin-bottom: 10px;
+ 
 }
 
-.hobby_image {
-    display: block;
-    width: 80%;
-    height: auto;
-    margin-bottom: 5px;
+.hobby_image1,.hobby_image2, .hobby_image3, .hobby_image4, .hobby_image5 {
+    height: 118px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+
+}
+
+.hobby_image1{
+    background-image: url(Images/Illustration_icon.png);
+}
+
+.hobby_image2{
+    background-image: url(Images/Gaming_icon.png);
+}
+
+.hobby_image3{
+    background-image: url(Images/Fishing_icon.png);
+}
+
+.hobby_image4{
+    background-image: url(Images/RC_Flying_icon.png);
+}
+
+.hobby_image5{
+    background-image: url(Images/Hockey_Icon.png);
 }
 
 .hobby_paragraph {
-    color: #555;
+    color: white;
     font-size: 14px;
     text-align: center;
 }
@@ -90,12 +114,17 @@ p {
 
 /*  My Services Section  */
 
+#My_Services{
+    margin-top: 100px;
+}
+
 .My_Service_Frame {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;
     place-items: center;
     padding: 50px;
+
 }
 
 #My_Services h1 {
@@ -104,25 +133,28 @@ p {
     text-align: center;
 }
 
-.Service_Card, .Service_Card1, .Service_Card2, .Service_Card3 {
+
+.Service_Card1, .Service_Card2, .Service_Card3, .Service_Card4, .Service_Card5, .Service_Card6 {
     width: 100%;
     box-sizing: border-box;
-    border: 3px solid #333;
+    outline: 3px solid black;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
 }
 
-.box-header {
+.Service_header1, .Service_header2, .Service_header3, .Service_header4, .Service_header5, .Service_header6 {
     font-size: 18px;
 }
 
-.image-placeholder, .Idation_img, .Design_system_img, .Interaction_Design_img {
-    width: 150px; /* Set the width of your image placeholder */
-    height: 150px; /* Set the height of your image placeholder */
+.Graphic_design_img, .Prototyping_img, .Idation_img, .Design_system_img, .Interaction_Design_img, .Logo_design_img {
+    width: 160px; 
+    height: 150px; 
     background-color: deeppink;
     margin: 20px auto;
+    padding-top: 10px;
 }
+
 .Idation_img {
     background-image: url(Images/ideation_still.png);
     background-size: contain;
@@ -132,7 +164,7 @@ p {
 }
 
 .Design_system_img{
-    background-image: url(Images/Design_Systems_still.png);
+    background-image: url(Images/Design_ststem_still.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,3 +179,182 @@ p {
     background-color: white;
 
 }
+
+.Prototyping_img {
+    background-image: url(Images/Prototyping_still.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.Graphic_design_img {
+    background-image: url(Images/Graphic_Design_still.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.Logo_design_img {
+    background-image: url(Images/Logo_Design_still.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+
+/* HOVER CARD STATE */
+/* HOVER CARD STATE */
+/* HOVER CARD STATE */
+
+.Service_Card1:hover {
+    outline: 5px solid #D9B912;
+    transition: .25s;
+}
+
+.Service_Card1:hover .Idation_img {
+    background-image: url(Images/Ideation_animate.gif);
+}
+
+.Service_Card1:hover .Service_header1 {
+    color: #D9B912;
+    transition: .25s;
+}
+
+.Service_Card2:hover {
+    outline: 5px solid #6DAEEB;
+    transition: .25s;
+    border: none;
+}
+
+.Service_Card2:hover .Design_system_img {
+    background-image: url(Images/Design_system_animate.gif);
+}
+
+.Service_Card2:hover .Service_header2 {
+    color: #6DAEEB;
+    transition: .25s;
+}
+
+.Service_Card3:hover {
+    outline: 5px solid orange;
+    transition: .25s;
+}
+
+.Service_Card3:hover .Interaction_Design_img {
+    background-image: url(Images/Interaction_Design_animate.gif);
+}
+
+.Service_Card3:hover .Service_header3 {
+    color: orange;
+    transition: .25s;
+}
+
+.Service_Card4:hover {
+    outline: 5px solid #F20074;
+    transition: .25s;
+}
+
+.Service_Card4:hover .Prototyping_img {
+    background-image: url(Images/Prototyping_animate.gif);
+}
+
+.Service_Card4:hover .Service_header4 {
+    color: #F20074;
+    transition: .25s;
+}
+
+.Service_Card5:hover {
+    outline: 5px solid #9747FF;
+    transition: .25s;
+}
+
+.Service_Card5:hover .Graphic_design_img {
+    background-image: url(Images/Graphic_Design_animate.gif);
+}
+
+.Service_Card5:hover .Service_header5 {
+    color: #9747FF;
+    transition: .25s;
+}
+
+
+.Service_Card6:hover {
+    outline: 5px solid #3ABF18;
+    transition: .25s;
+}
+
+.Service_Card6:hover .Logo_design_img {
+    background-image: url(Images/Logo_Design_animate.gif);
+}
+
+.Service_Card6:hover .Service_header6 {
+    color: #3ABF18;
+    transition: .25s;
+}
+
+/* MY WORK SECTION */
+
+#My_Work {
+    text-align: center;
+    background-color: #174655;
+    margin-top: 10px;
+  }
+  
+#My_Work h1{
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+  .barContainer {
+    width: 50%;
+    height: 50px;
+    outline: 1px solid black;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  
+  .bar {
+    display: flex;
+    height: 100%;
+  }
+  
+  .category {
+    flex: 1;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .My_Work_Frame {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    place-items: center;
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+  .My_Work_Card1, .My_Work_Card2, .My_Work_Card3 {
+    width: 100%;
+    box-sizing: border-box;
+    outline: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
